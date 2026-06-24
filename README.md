@@ -1,4 +1,4 @@
-# Aforro Backend — Round 2 Assignment
+# Aforro Backend — Assignment
 
 A production-quality Django REST Framework backend demonstrating clean architecture, query optimization, Redis caching, Celery async tasks, and full Docker containerization.
 
