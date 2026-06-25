@@ -5,6 +5,22 @@ A step-by-step flow for testing every endpoint through the Swagger UI at
 
 ---
 
+## How Swagger API Testing Works
+
+![Swagger API Flow](swagger_api_flow.png)
+
+> **Flow Summary:**
+> 1. **Start Application** — `docker compose up --build -d`
+> 2. **Open Swagger UI** — `http://localhost:8000/api/docs/`
+> 3. **Explore APIs** — browse all available endpoint sections (orders, stores, api)
+> 4. **Select an Endpoint** — click to expand, then click **Try it out**
+> 5. **Click Execute** — Swagger sends the live request to the API server
+> 6. **API Processes Request** — Django validates data, runs business logic, queries DB
+> 7. **Response Returned** — HTTP status code + response body displayed in Swagger
+> 8. **API Tested Successfully** — verify status code, response body, and headers
+
+---
+
 ## Prerequisites
 
 Make sure the project is running before starting:
