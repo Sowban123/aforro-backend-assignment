@@ -27,17 +27,19 @@ logger = logging.getLogger(__name__)
         request=OrderCreateSerializer,
         responses={201: OrderSerializer},
         examples=[
-            OpenApiExample(
-                name="Successful order request",
-                value={
-                    "store_id": 1,
-                    "items": [
-                        {"product_id": 42, "quantity_requested": 5},
-                        {"product_id": 87, "quantity_requested": 2},
-                    ],
-                },
-                request_only=True,
-            ),
+OpenApiExample(
+    name="Successful order request",
+    value={
+        "store_id": 1,
+        "items": [
+            {
+                "product_id": 179,
+                "quantity_requested": 1,
+            }
+        ],
+    },
+    request_only=True,
+),
         ],
     )
 )
